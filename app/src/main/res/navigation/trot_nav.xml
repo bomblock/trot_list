@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trot_nav"
+    app:startDestination="@id/singre1Fragment">
+
+    <fragment
+        android:id="@+id/singre1Fragment"
+        android:name="com.example.trot_list.singre1Fragment"
+        android:label="fragment_singre1"
+        tools:layout="@layout/fragment_singre1" >
+        <action
+            android:id="@+id/action_singre1Fragment_to_singre3Fragment"
+            app:destination="@id/singre3Fragment" />
+        <action
+            android:id="@+id/action_singre1Fragment_to_singre2Fragment"
+            app:destination="@id/singre2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singre2Fragment"
+        android:name="com.example.trot_list.singre2Fragment"
+        android:label="fragment_singre2"
+        tools:layout="@layout/fragment_singre2" >
+        <action
+            android:id="@+id/action_singre2Fragment_to_singre3Fragment"
+            app:destination="@id/singre3Fragment" />
+        <action
+            android:id="@+id/action_singre2Fragment_to_singre1Fragment"
+            app:destination="@id/singre1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singre3Fragment"
+        android:name="com.example.trot_list.singre3Fragment"
+        android:label="fragment_singre3"
+        tools:layout="@layout/fragment_singre3" >
+        <action
+            android:id="@+id/action_singre3Fragment_to_singre2Fragment"
+            app:destination="@id/singre2Fragment" />
+        <action
+            android:id="@+id/action_singre3Fragment_to_singre1Fragment"
+            app:destination="@id/singre1Fragment" />
+    </fragment>
+</navigation>
